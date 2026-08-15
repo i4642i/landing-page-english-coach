@@ -158,14 +158,14 @@ footer{padding-top:34px;padding-bottom:34px}
 .campaign-button{color:var(--blue);background:#fff;box-shadow:0 12px 30px rgba(4,31,58,.2)}
 .campaign-actions>a:not(.button){display:inline-flex;align-items:center;gap:5px;color:#fff;font-size:13px;font-weight:500}
 .campaign-actions svg{width:17px;height:17px}
-@media(max-width:900px){.campaign-hero{min-height:780px}.campaign-hero>img{object-position:38% center}.campaign-shade{background:linear-gradient(180deg,rgba(4,31,58,.05) 38%,rgba(4,31,58,.88) 100%)}.campaign-copy{top:auto;right:30px;bottom:54px;left:30px;width:auto;text-align:left}.campaign-actions{justify-content:flex-start}}
-@media(max-width:600px){.campaign-hero{min-height:700px}.campaign-hero>img{object-position:40% center}.campaign-copy{right:20px;bottom:38px;left:20px}.campaign-copy h1{font-size:36px}.campaign-copy>p:not(.eyebrow){font-size:14px}.campaign-actions{align-items:stretch;flex-direction:column;gap:16px}.campaign-button{width:100%}.campaign-actions>a:not(.button){justify-content:center}}
+@media(max-width:900px){.campaign-hero{min-height:780px}.campaign-hero>img{object-position:50% center}.campaign-shade{background:linear-gradient(180deg,rgba(4,31,58,.05) 38%,rgba(4,31,58,.88) 100%)}.campaign-copy{top:auto;right:30px;bottom:54px;left:30px;width:auto;text-align:left}.campaign-actions{justify-content:flex-start}}
+@media(max-width:600px){.campaign-hero{min-height:700px}.campaign-hero>img{object-position:50% center}.campaign-copy{right:20px;bottom:38px;left:20px}.campaign-copy h1{font-size:36px}.campaign-copy>p:not(.eyebrow){font-size:14px}.campaign-actions{align-items:stretch;flex-direction:column;gap:16px}.campaign-button{width:100%}.campaign-actions>a:not(.button){justify-content:center}}
 
 /* Keep the important top of the campaign image visible below the fixed header */
 .campaign-hero{margin-top:72px;min-height:calc(100vh - 72px)}
-.campaign-hero>img{object-position:center top}
-@media(max-width:900px){.campaign-hero>img{object-position:38% top}}
-@media(max-width:600px){.campaign-hero{margin-top:64px;min-height:700px}.campaign-hero>img{object-position:40% top}}
+.campaign-hero>img{object-position:center center}
+@media(max-width:900px){.campaign-hero>img{object-position:50% center}}
+@media(max-width:600px){.campaign-hero{margin-top:64px;min-height:700px}.campaign-hero>img{object-position:50% center}}
 
 /* Smartphone layout: show the complete campaign image, then the copy */
 @media(max-width:600px){

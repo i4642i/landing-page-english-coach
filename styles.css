@@ -396,3 +396,8 @@ footer{display:block}
   .campaign-screens img:last-child{transform:translateY(-8px)}
 }
 .campaign-screens img:last-child{transform:none}
+
+/* Anchor the QR card to the hero bottom, mirroring the screens on the left */
+@media(min-width:901px){
+  .campaign-hero>.campaign-qr{position:absolute;z-index:3;right:max(5vw,44px);bottom:22px;float:none;margin-top:0}
+}

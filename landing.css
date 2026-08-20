@@ -490,6 +490,10 @@ footer{background:#eceae4}
 .audience-cta-action a{display:flex;align-items:center;gap:18px;min-width:185px;padding:15px 20px;border-radius:13px;background:white;color:#284f70;font-weight:800;box-shadow:0 10px 25px rgba(9,32,49,.18)}
 .audience-cta-action a:hover{transform:translateY(-2px)}
 .audience-cta-action small{color:#c9d9e4}
+.hero .service-notice{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:16px;font-size:12px;font-weight:750;line-height:1.45}
+.hero .service-notice span{display:inline-block;padding:6px 9px;border-radius:7px}
+.hero .service-notice .free-notice{background:#e4f0f5;color:#294f6b}
+.hero .service-notice .paid-notice{background:#f7e8df;color:#9a4f2f}
 
 @media(max-width:900px){.audience-cta{grid-template-columns:245px 1fr}.cta-illustration{width:245px;height:170px}.audience-cta-action{grid-column:2;justify-items:start}.audience-cta-action a{min-width:0}}
 @media(max-width:760px){

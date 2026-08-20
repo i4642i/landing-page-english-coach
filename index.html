@@ -1,100 +1,160 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="한국어 뜻만 보고 영어로 직접 쓰고 말하며, 안 외워지는 문장만 반복하는 영어 문장 암기 서비스입니다.">
-  <title>영어 암기 코치 | 쓸 수 있는 영어를 만드는 연습</title>
-  <link rel="icon" href="assets/icon-192.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="외우고 싶은 영어 문장을 넣고, 쓰고 말하며, 기억 안 나는 것만 다시 연습하세요.">
+  <title>영어 암기 코치 — 내 문장이 입에서 나올 때까지</title>
+  <link rel="icon" href="assets/icon-192.png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
-  <script src="script.js" defer></script>
+<link rel="stylesheet" href="landing.css?v=20260820-32">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script><script src="script.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="영어 암기 코치 홈">
+    <a class="brand" href="index.html" aria-label="영어 표현 노트 홈">
       <img src="assets/icon-192.png" alt="">
-      <span>영어 암기 코치</span>
+      <span><strong>영어 표현 노트</strong><small>English memory coach</small></span>
     </a>
-    <nav class="desktop-nav" aria-label="주요 메뉴">
-      <a href="#method">학습 방법</a><a href="#memory-box">암기박스</a>
+    <nav aria-label="주요 메뉴">
+      <a href="#service">서비스 소개</a>
+      <a href="#simple">학습 방법</a>
+      <a href="#features">핵심 기능</a>
+      <a href="#content">학습 콘텐츠</a>
+      <a href="#audience">추천 대상</a>
     </nav>
-    <a class="button button-small" href="https://english.nextopologix.com">시작하기 <i data-lucide="arrow-up-right"></i></a>
+    <div class="header-actions">
+      <a class="login-button" href="https://english.nextopologix.com">로그인</a>
+      <a class="button small" href="https://english.nextopologix.com">무료로 시작하기</a>
+    </div>
   </header>
-
-  <main id="top">
-    <section class="campaign-hero" aria-labelledby="campaign-title">
-      <img class="campaign-backdrop" src="assets/hero-desk-study.webp" alt="책상에서 휴대폰과 노트로 영어를 학습하는 사람" loading="eager">
-      <div class="campaign-screens" aria-label="영어 암기 코치 스피킹 학습 화면">
-        <img src="assets/hero-speaking-prompt.webp" alt="한국어 뜻을 듣고 영어로 말하는 스피킹 화면" loading="eager">
-        <img src="assets/hero-speaking-success.webp" alt="영어 문장을 정확히 말해 통과한 스피킹 화면" loading="eager">
+  <main>
+    <section class="hero" id="service">
+      <div class="hero-visual"><div class="phone"><img src="assets/hero-blue-room-v9.jpg" alt="블루 톤의 햇살 드는 방에서 휴대폰으로 영어 말하기를 연습하는 장면"></div></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">FROM MEMORY TO SPEECH</p>
+        <h1>적어둔 영어가,<br>결국 <em>내 말이 되도록</em></h1>
+        <p class="lead">기억하고 싶은 문장과 표현을 모아두고,<br> 간격 반복으로 다시 만나고, 직접 말하고 쓰며<br> 실제로 익숙해질 때까지 반복합니다.</p>
+        <div class="actions">
+          <a class="button" href="https://english.nextopologix.com">무료로 시작하기</a>
+          <a class="hero-secondary" href="#simple">학습 방법 보기</a>
+        </div>
+        <p class="micro">가입 3,000P 무료 · 설치 없이 바로 시작</p>
       </div>
-      <div class="campaign-shade"></div>
-      <div class="campaign-copy reveal">
-        <p class="eyebrow">WRITE · SPEAK · GROW</p>
-        <p class="campaign-app-name"><img src="assets/icon-192.png" alt="">영어 암기 코치</p>
-        <h1 id="campaign-title">적어두기만 한 영어,<br><span class="campaign-title-line"><strong>말해본 적 있나요?</strong></span></h1>
-        <p>저장해둔 단어와 표현을 앱이 알아서 꺼내줍니다.<br>걷는 시간에도, 잠깐의 여유에도. 말하고 쓰면서 내 것으로.</p>
-        <div class="campaign-actions">
-          <a class="button campaign-button" href="https://english.nextopologix.com">지금 시작하기 <i data-lucide="arrow-right"></i></a>
-          <a href="#method">학습 방법 보기 <i data-lucide="chevron-down"></i></a>
+    </section>
+
+    <section class="simple-section wrap" id="simple">
+      <div class="steps-heading">
+        <p class="eyebrow">HOW IT BECOMES YOURS</p>
+        <h2>영어가 내 말이 되는 3단계</h2>
+        <p>어디서든 시작해 원하는 표현을 담고, 내 것이 될 때까지 연습합니다.</p>
+      </div>
+      <div class="learning-steps reveal">
+        <article class="learning-step step-collect">
+          <img src="assets/step-a01-cropped.jpg" alt="PC와 휴대폰에서 영어 학습을 시작하는 모습" loading="lazy">
+          <div class="learning-step-copy"><div><b>01</b><strong>시작하기</strong></div><p>PC와 스마트폰에서<br>간편하게 시작하세요.</p></div>
+        </article>
+        <span class="step-arrow" aria-hidden="true">→</span>
+        <article class="learning-step step-repeat">
+          <img src="assets/step-a02-cropped.jpg" alt="PC에서 영어 문장과 표현을 학습 목록에 담는 모습" loading="lazy">
+          <div class="learning-step-copy"><div><b>02</b><strong>표현 담기</strong></div><p>배우고 싶은 영어 단어나 문장을<br>직접 담으세요.</p></div>
+        </article>
+        <span class="step-arrow" aria-hidden="true">→</span>
+        <article class="learning-step step-speak">
+          <img src="assets/step-a03-cropped.jpg" alt="산책하며 휴대폰으로 영어 표현을 직접 말하는 모습" loading="lazy">
+          <div class="learning-step-copy"><div><b>03</b><strong>반복 연습</strong></div><p>말하고 쓰고 반복하며<br>내 표현으로 만드세요.</p></div>
+        </article>
+      </div>
+      <p class="simple-summary">어디서든 시작하고, 원하는 표현을 담아, 내 것이 될 때까지 반복합니다.</p><a class="text-link simple-more" href="#features">핵심 기능 자세히 보기 <i data-lucide="arrow-right"></i></a>
+    </section>
+
+    <section class="feature-section" id="features">
+      <div class="wrap">
+        <div class="feature-heading">
+          <p class="eyebrow">CORE FEATURES</p>
+          <h2>학습에 필요한 핵심 기능</h2>
+          <p>표현을 정리하는 순간부터 쓰고 말하며 익히는 과정까지 한곳에서 이어집니다.</p>
+        </div>
+        <div class="feature-grid reveal">
+          <article><span><img src="assets/feature-expression.jpg" alt="" loading="lazy"></span><h3>나만의 표현 관리</h3><p>내가 모은 문장과 표현을<br>학습 목록으로 저장하고 정리합니다.</p></article>
+          <article><span><img src="assets/feature-speaking.jpg" alt="" loading="lazy"></span><h3>말하기 연습</h3><p>음성 인식으로 직접 말하며<br>영어 표현을 입에 익힙니다.</p></article>
+          <article><span><img src="assets/feature-writing.jpg" alt="" loading="lazy"></span><h3>쓰기 연습</h3><p>뜻을 보고 영어 문장을 써보며<br>정확하게 기억합니다.</p></article>
+          <article><span><img src="assets/feature-grading.jpg" alt="" loading="lazy"></span><h3>자동 채점</h3><p>말하기와 쓰기 결과를 확인하고<br>바로 피드백을 받습니다.</p></article>
+          <article><span><img src="assets/feature-ai.jpg" alt="" loading="lazy"></span><h3>AI 교정·해설</h3><p>틀린 부분을 쉽게 이해하고<br>자연스러운 표현까지 확인합니다.</p></article>
+          <article><span><img src="assets/feature-optimization.jpg" alt="" loading="lazy"></span><h3>학습 효율 최적화</h3><p>자주 틀리는 표현은 더 자주,<br>익숙한 표현은 간격을 넓혀 복습합니다.</p></article>
+          <article><span><img src="assets/feature-stats.jpg" alt="" loading="lazy"></span><h3>학습 통계</h3><p>학습 기록과 정답률을 통해<br>나의 학습 상태를 확인합니다.</p></article>
+          <article><span><img src="assets/feature-web.jpg" alt="" loading="lazy"></span><h3>설치 없이 바로 시작</h3><p>별도의 설치 없이 PC와 스마트폰의<br>웹 브라우저에서 학습합니다.</p></article>
         </div>
       </div>
-      <a class="campaign-qr" href="https://english.nextopologix.com" aria-label="QR코드 또는 링크로 영어 암기 코치 시작하기">
-        <img src="assets/service-qr.png" alt="영어 암기 코치 시작 QR코드">
-        <span><strong>휴대폰으로 바로 시작</strong><small>QR코드를 스캔하세요</small></span>
-      </a>
     </section>
 
-    <section class="concept-overview" id="method" aria-labelledby="concept-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">THE LEARNING FLOW</p>
-        <h2 id="concept-title">영어 암기 코치는<br>이렇게 작동합니다</h2>
-      </div>
-      <div class="concept-steps">
-        <article class="concept-step reveal">
-          <div class="concept-step-number">01</div>
-          <img src="assets/concept-register.webp" alt="컴퓨터에서 학습할 문장을 등록하는 모습" loading="lazy">
-          <div class="concept-step-copy"><p>REGISTER</p><h3>내 문장을 등록해요</h3><span>단어와 예문, 설명을 한 번에 정리해<br>나만의 학습 자료를 만듭니다.</span></div>
-        </article>
-        <article class="concept-step reveal">
-          <div class="concept-step-number">02</div>
-          <img src="assets/concept-sync.webp" alt="학습 내용이 여러 기기에 동기화되는 모습" loading="lazy">
-          <div class="concept-step-copy"><p>SYNC</p><h3>어디서든 이어서 해요</h3><span>PC와 휴대폰의 학습 기록이 연결되어<br>멈춘 곳에서 바로 이어집니다.</span></div>
-        </article>
-        <article class="concept-step reveal">
-          <div class="concept-step-number">03</div>
-          <img src="assets/concept-practice.webp" alt="영어 문장을 직접 쓰고 말하며 연습하는 모습" loading="lazy">
-          <div class="concept-step-copy"><p>PRACTICE</p><h3>직접 쓰고 말해요</h3><span>라이팅과 스피킹을 반복하며<br>아는 문장을 쓸 수 있는 문장으로 바꿉니다.</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="box-section" id="memory-box">
-      <div class="section-heading reveal">
-        <p class="eyebrow">MEMORY BOX</p>
-        <h2>아는 문장은 넘기고,<br>안 되는 문장만 다시</h2>
-        <p>모두를 똑같이 반복하지 않습니다. 기억 상태에 따라 문장마다 다음 순서가 달라집니다.</p>
-      </div>
-      <figure class="memory-new-visual reveal" aria-label="5단계 메모리박스 학습 원리 이미지">
-        <img src="assets/memory-box-flow.webp" alt="정답이면 다음 단계로 이동하고 틀리면 이전 단계로 돌아가는 5단계 메모리박스" loading="lazy">
-      </figure>
-      <div class="memory-rules reveal">
-        <article class="memory-rule success"><span><i data-lucide="check"></i></span><div><p>정답 · 기억 성공</p><h3>맞히면 다음 단계로</h3><small>자신 있게 맞힌 문장은 한 단계 위 상자로 이동합니다.</small></div></article>
-        <article class="memory-rule retry"><span><i data-lucide="x"></i></span><div><p>오답 · 기억 미흡</p><h3>틀리면 이전 단계로</h3><small>아직 불확실한 문장은 더 빨리 다시 만나 복습합니다.</small></div></article>
-        <article class="memory-rule master"><span><i data-lucide="target"></i></span><div><p>목표 · 완전 암기</p><h3>5단계에 도달하면 완료</h3><small>모든 상자를 통과한 문장은 오래 기억하는 내 문장이 됩니다.</small></div></article>
+    <section class="starter-section verified-content" id="content">
+      <div class="wrap">
+        <div class="verified-heading">
+          <p class="eyebrow">VERIFIED LEARNING CONTENT</p>
+          <h2>4가지 검증된 콘텐츠 기본 제공</h2>
+          <p>신뢰할 수 있는 영어 학습 자료를 별도 준비 없이 바로 학습하세요.</p>
+        </div>
+        <div class="verified-grid reveal">
+          <a class="verified-card" href="https://english.nextopologix.com">
+            <span class="content-tag conversation">일상 회화</span><h3>Dialogs for<br>Everyday Use</h3><b>30 에피소드</b><p>실생활 상황과 인물의 생각을 이해하고, 그 순간의 영어를 직접 말해봅니다.</p>
+            <div class="verified-cover book-cover"><img src="assets/verified-dialogs.jpg" alt="Dialogs for Everyday Use 표지" loading="lazy"></div>
+          </a>
+          <a class="verified-card" href="https://english.nextopologix.com">
+            <span class="content-tag conversation more">일상 회화</span><h3>More Dialogs for<br>Everyday Use</h3><b>38 에피소드</b><p>더 다양한 상황 중심 대화로 자연스러운 영어 표현을 연습합니다.</p>
+            <div class="verified-cover book-cover"><img src="assets/verified-more-dialogs.jpg" alt="More Dialogs for Everyday Use 표지" loading="lazy"></div>
+          </a>
+          <a class="verified-card" href="https://english.nextopologix.com">
+            <span class="content-tag vocabulary">일반 영어</span><h3>New General<br>Service List 1.2</h3><b>2,809 낱말</b><p>일상과 일반 영어에서 자주 쓰이는 핵심 고빈도 어휘를 학습합니다.</p>
+            <div class="verified-cover symbol-cover"><img src="assets/verified-ngsl.jpg" alt="New General Service List 1.2 이미지" loading="lazy"></div>
+          </a>
+          <a class="verified-card" href="https://english.nextopologix.com">
+            <span class="content-tag test">시험 대비</span><h3>TOEIC Service<br>List 1.2</h3><b>1,200 낱말</b><p>TOEIC에 자주 등장하는 핵심 어휘를 효율적으로 학습합니다.</p>
+            <div class="verified-cover symbol-cover"><img src="assets/verified-tsl.jpg" alt="TOEIC Service List 1.2 이미지" loading="lazy"></div>
+          </a>
+        </div>
+        <div class="content-assurances">
+          <span><i data-lucide="shield-check"></i><b>검증된 자료</b><small>실제 교육 현장의 콘텐츠</small></span>
+          <span><i data-lucide="list-checks"></i><b>체계적 구성</b><small>수준별·주제별 학습</small></span>
+          <span><i data-lucide="refresh-cw"></i><b>꾸준한 관리</b><small>학습 자료 지속 업데이트</small></span>
+          <span><i data-lucide="circle-check-big"></i><b>바로 학습</b><small>추가 구매 없이 시작</small></span>
+        </div>
       </div>
     </section>
 
-    <section class="final-cta reveal"><img src="assets/icon-512.png" alt=""><p class="eyebrow">WRITE · SPEAK · GROW</p><h2>오늘 열 문장을 꺼내 써 보세요</h2><p>지금, 나만의 문장으로 학습을 시작해 보세요.</p><a class="button button-white" href="https://english.nextopologix.com">영어 암기 코치 시작하기 <i data-lucide="arrow-up-right"></i></a></section>
+    <section class="audience-section wrap" id="audience">
+      <div class="audience-heading">
+        <p class="eyebrow">WHO IT'S FOR</p>
+        <h2>이런 분들께 <em>추천해요</em></h2>
+      </div>
+      <div class="audience-list reveal">
+        <p><i data-lucide="check"></i><span>영어 표현을 배워도 금방 잊어버리는 분</span></p>
+        <p><i data-lucide="check"></i><span>말하기와 쓰기를 함께 반복하며 영어를 익히고 싶은 분</span></p>
+        <p><i data-lucide="check"></i><span>머리로는 아는데, 막상 영어로 말하려면 막히는 분</span></p>
+        <p><i data-lucide="check"></i><span>틀린 표현을 바로 교정받고 같은 실수를 줄이고 싶은 분</span></p>
+        <p><i data-lucide="check"></i><span>내게 필요한 문장과 표현을 모아두고 싶은 분</span></p>
+        <p><i data-lucide="check"></i><span>아는 영어를 실제로 쓸 수 있는 영어로 만들고 싶은 분</span></p>
+      </div>
+      <div class="audience-cta reveal">
+        <div class="cta-illustration"><img src="assets/cta-devices-transparent-v3.png" alt="PC와 스마트폰에서 이용하는 영어 암기 코치" loading="lazy"></div>
+        <div class="audience-cta-copy"><p>FROM MEMORY TO SPEECH</p><h3>표현을 모으고, 반복하고,<br>내 말로 만드세요</h3><span>영어는 기억이 아니라 습관입니다.<br>스스로 꺼내 쓸 수 있는 영어를 목표로 합니다.</span></div>
+        <div class="audience-cta-action"><a href="https://english.nextopologix.com">지금 시작하기 <i data-lucide="arrow-right"></i></a><small>설치 없이 바로 시작</small></div>
+      </div>
+    </section>
+
   </main>
-
-  <footer>
-    <div class="footer-company"><span>상호: 넥스토폴로직스(NexTopologix)</span><span>대표: 김상호</span><span>사업자등록번호: 896-01-04011</span><span>통신판매업신고번호: 2026-창원성산-0365</span><span>주소: 경상남도 창원시 성산구 비음로27번길 46-14, 202호(사파동)</span><span>전화: <a href="tel:+821025334642">010-2533-4642</a></span><span>이메일: <a href="mailto:ksh4642@nextopologix.com">ksh4642@nextopologix.com</a></span></div>
-    <p>© 2026 영어 암기 코치</p>
-  </footer>
+<footer class="business-footer">
+  <div class="footer-inner">
+    <div class="business-info">
+      <span><b>상호</b> 넥스토폴로직스(NexTopologix)</span>
+      <span><b>대표</b> 김상호</span>
+      <span><b>사업자등록번호</b> 896-01-04011</span>
+      <span><b>통신판매업신고번호</b> 2026-창원성산-0365</span>
+      <span class="business-address"><b>주소</b> 경상남도 창원시 성산구 비음로27번길 46-14, 202호(사파동)</span>
+      <span><b>전화</b> <a href="tel:01025334642">010-2533-4642</a></span>
+      <span><b>이메일</b> <a href="mailto:ksh4642@nextopologix.com">ksh4642@nextopologix.com</a></span>
+    </div>
+    <p class="footer-copyright">© 2026 영어 암기 코치</p>
+  </div>
+</footer>
 </body>
 </html>

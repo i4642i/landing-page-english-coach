@@ -441,7 +441,7 @@ footer{background:#eceae4}
 .content-tag.test{border-color:#aebde4;background:#f3f5fc;color:#4169ad}
 .verified-card h3{min-height:52px;margin:15px 0 5px;color:#172a3c;font-size:22px;line-height:1.16;letter-spacing:-.045em}
 .verified-card>b{color:#587084;font-size:13px}
-.verified-card>p{min-height:69px;margin:13px 0 15px;color:#657177;font-size:14px;line-height:1.65}
+.verified-card>p{min-height:92px;margin:13px 0 15px;color:#657177;font-size:14px;line-height:1.65}
 .verified-cover{display:grid;place-items:center;height:220px;margin:0 -23px;overflow:hidden;border-top:1px solid #edf0ef;background:#fff}
 .verified-cover img{display:block;object-fit:contain;filter:drop-shadow(0 10px 13px rgba(30,48,58,.1))}
 .book-cover img{width:auto;height:202px;align-self:end}
